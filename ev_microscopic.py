@@ -408,7 +408,8 @@ def page_ai_detect():
 
             else:
                 st.warning("Model not loaded (ev_cnn_mobile.keras not found).")
-
+        except Exception as e:
+            print(f"An error occurred: {e}")
 
 def show_card(file_name, title, key_id):
     # สร้างกรอบสวยๆ ล้อมรอบ
